@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 TO initiate
-    npm install
-    npm start
+### `npm install`
+### `npm start`
 
 ## Available Scripts
 
