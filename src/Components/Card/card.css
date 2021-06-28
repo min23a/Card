@@ -1,0 +1,56 @@
+.custom-card {
+    height: 167px;
+    width: 150px;
+    border-radius: 20px;
+    border: black 1px solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    z-index: 1;
+}
+.hovered {
+    background-color: white!important;
+    color: black!important;
+}
+.custom-card::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -20px;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.arrow::after{
+    opacity: 1;
+    z-index: -1;
+}
+.card-icon {
+    font-size: 30px;
+    color : #FFCC29;
+}
+.card-title {
+    z-index: 2;
+}
+.underline {
+    text-decoration: underline #FFCC29;
+}
+.selected {
+    background-color: white !important;
+    color: black !important;
+}
+.selected .card-icon{
+    color: black;
+}
